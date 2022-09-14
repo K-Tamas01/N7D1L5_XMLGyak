@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+    <cim>3516 Miskolc, test valami utca 2</cim>
+    <hallgatók>
+        <hallgató>
+            <név>Kis Ernő</név>
+            <lakcim>4200 Nyíregyháza, aba utca 2</lakcim>
+        </hallgató>
+        <hallgató>
+            <név>Erdő Péter</név>
+            <lakcim>3900 Abaújszántó, Kis Ernő utca 2</lakcim>
+        </hallgató>
+    </hallgatók>
+    <helyszín>XXX előadó</helyszín>
+    <előadó>
+        <név>Pintér József</név>
+        <adószám>1516615616</adószám>
+        <lakcim>1200 Budapest, Pesti út 42</lakcim>
+    </előadó>
+    <dátum>2022.09.14</dátum>
+</konferencia>
