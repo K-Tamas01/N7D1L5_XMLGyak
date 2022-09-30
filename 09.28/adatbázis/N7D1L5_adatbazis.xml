@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dolgozo SYSTEM "dolgozo.dtd">
+
+<dolgozo>
+    <kod>0</kod>
+    <nev>Béla</nev>
+    <fizetes>1000</fizetes>
+</dolgozo>

@@ -1,0 +1,13 @@
+<!DOCTYPE N7D1L5_orarend
+[
+<!ELEMENT N7D1L5_orarend (ora,targy,idopont,helyszin,oktato,szak)>
+<!ELEMENT ora (#PCDATA)>
+<!ELEMENT targy (#PCDATA)>
+<!ELEMENT idopont (nap,ig,tol)>
+<!ELEMENT nap (#PCDATA)>
+<!ELEMENT ig (#PCDATA)>
+<!ELEMENT tol (#PCDATA)>
+<!ELEMENT helyszin (#PCDATA)>
+<!ELEMENT oktato (#PCDATA)>
+<!ELEMENT szak (#PCDATA)>
+]>
