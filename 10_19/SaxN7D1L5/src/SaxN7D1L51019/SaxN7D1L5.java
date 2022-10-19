@@ -23,7 +23,7 @@ public class SaxN7D1L5 {
 			
 			SaxHandler handler = new SaxHandler();
 			
-			saxParser.parse(new File("file.xml"), handler);
+			saxParser.parse(new File("N7D1L5_orarend.xml"), handler);
 			
 		} catch(ParserConfigurationException | SAXException | IOException e) {
 			e.printStackTrace();
@@ -46,7 +46,7 @@ class SaxHandler extends DefaultHandler {
 				sb.append(", ");
 			}
 		}
-		sb.append("}");
+		sb.append("} \n");
 		return sb.toString();
 	}
 	
@@ -60,14 +60,14 @@ class SaxHandler extends DefaultHandler {
 	public void startElement(String uri, String localNmae, String qName, Attributes attributes){
 		indent++;
 		indent();
-		System.out.print(qName + formatAttributes(attributes) + "start");
+		System.out.print(qName + formatAttributes(attributes) + " start ");
 	}
 	
 	@Override
 	public void endElement(String uri, String localName, String qName) {
 		indent();
 		indent--;
-		System.out.print(qName + " end");
+		System.out.print(qName + " end \n");
 	}
 	
 	@Override
