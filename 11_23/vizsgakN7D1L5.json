@@ -1,0 +1,29 @@
+{
+    "_id": "N7D1L5",
+    "vizsgak_N7D1L5": {
+        "vizsga": [
+            {
+                "kurzus": "Hálózat Ismeret",
+                "helyzín": "XXX. előadó",
+                "idopont": {
+                    "nap": "Kedd",
+                    "tol": "8:00",
+                    "ig": "10:00"
+                },
+                "oktato": "Dr. Kovács Szilveszter",
+                "jegy": 5
+            },
+            {
+                "kurzus": "Számítógépi grafika",
+                "helyzín": "III. előadó",
+                "idopont":{
+                    "nap": "Szerda",
+                    "tol": "10:00",
+                    "ig": "12:00"
+                },
+                "oktato": "Dr. Juhász Imre",
+                "jegy": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<_id>N7D1L5</_id>
+<vizsgak_N7D1L5>
+	<vizsga>
+		<kurzus>Hálózat Ismeret</kurzus>
+		<helyzín>XXX. előadó</helyzín>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>8:00</tol>
+			<ig>10:00</ig>
+		</idopont>
+		<oktato>Dr. Kovács Szilveszter</oktato>
+		<jegy>5</jegy>
+	</vizsga>
+	<vizsga>
+		<kurzus>Számítógépi grafika</kurzus>
+		<helyzín>III. előadó</helyzín>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>10:00</tol>
+			<ig>12:00</ig>
+		</idopont>
+		<oktato>Dr. Juhász Imre</oktato>
+		<jegy>1</jegy>
+	</vizsga>
+</vizsgak_N7D1L5>
