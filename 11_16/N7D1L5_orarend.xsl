@@ -5,29 +5,6 @@
     <xsl:template match = "/">
 
         <html>
-            <style>
-                table {
-                font-family: arial, sans-serif;
-                border-collapse: collapse;
-                width: 100%;
-                }
-
-                td, th {
-                border: 1px solid #dddddd;
-                text-align: left;
-                padding: 8px;
-                }
-
-                tr:nth-child(even) {
-                background-color: #dddddd;
-                }
-
-                caption {
-                display: table-caption;
-                text-align: center;
-                }
-
-            </style>
             <body>
                 <h2>Orarend for-each, value-of</h2>
 
@@ -58,7 +35,6 @@
                             <td><xsl:value-of select="szak"/></td>
                         </tr>
                     </xsl:for-each>
-
                 </table>
             </body>
         </html>
