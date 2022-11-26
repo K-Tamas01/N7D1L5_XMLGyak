@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+<xs:element name="kocsik" type="kocsiTipus">
+		<xs:key name="K1">
+				<xs:selector xpath="elado" />
+				<xs:field xpath="@id" />
+			</xs:key>
+			<xs:key name="K2">
+				<xs:selector xpath="gyarto" />
+				<xs:field xpath="@id" />
+			</xs:key>
+			<xs:key name="K3">
+				<xs:selector xpath="dolgozo" />
+				<xs:field xpath="@id" />
+			</xs:key>
+			<xs:key name="K4">
+				<xs:selector xpath="auto" />
+				<xs:field xpath="@id" />
+			</xs:key>
+			<xs:key name="K5">
+				<xs:selector xpath="motor" />
+				<xs:field xpath="@id" />
+			</xs:key>
+			
+			<xs:keyref refer="K1" name="refK1">
+				<xs:selector xpath="kiszallitas" />
+				<xs:field xpath="@GYID" />
+			</xs:keyref>
+			<xs:keyref refer="K2" name="refK2_1">
+				<xs:selector xpath="kiszallitas" />
+				<xs:field xpath="@EID" />
+			</xs:keyref>
+			<xs:keyref refer="K2" name="refK2_2">
+				<xs:selector xpath="gyar" />
+				<xs:field xpath="@GYID" />
+			</xs:keyref>
+			<xs:keyref refer="K3" name="refK3_1">
+				<xs:selector xpath="gyar" />
+				<xs:field xpath="@DID" />
+			</xs:keyref>
+			<xs:keyref refer="K3" name="refK3_2">
+				<xs:selector xpath="gyar" />
+				<xs:field xpath="@GYID" />
+			</xs:keyref>
+			<xs:keyref refer="K4" name="refK4_1">
+				<xs:selector xpath="gyar" />
+				<xs:field xpath="@KID" />
+			</xs:keyref>
+			<xs:keyref refer="K4" name="refK4_2">
+				<xs:selector xpath="alkatresz" />
+				<xs:field xpath="@KID" />
+			</xs:keyref>
+			<xs:keyref refer="K5" name="refK5_1">
+				<xs:selector xpath="alkatresz" />
+				<xs:field xpath="@MID" />
+			</xs:keyref>
+		</xs:element>
+			
+			<xs:complexType name="kocsiTipus">
+				<xs:sequence>
+					<xs:element name="elado" type="eladoTipus" minOccurs="0" maxOccurs="100"/> 
+					<xs:element name="kiszallitas" type="kiszallitasTipus" minOccurs="0" maxOccurs="100"/>
+					<xs:element name="gyarto" type="gyartoTipus" minOccurs="0" maxOccurs="100"/>
+					<xs:element name="gyar" type="gyarTipusd" minOccurs="0" maxOccurs="100"/>
+                    <xs:element name="gyar" type="gyarTipusk" minOccurs="0" maxOccurs="100"/>
+					<xs:element name="dolgozo" type="dolgozoTipus" minOccurs="0" maxOccurs="100"/>
+					<xs:element name="kocsi" type="kocsiTipus" minOccurs="0" maxOccurs="100"/>
+					<xs:element name="alkatresz" type="alkatreszTipus" minOccurs="0" maxOccurs="100"/>
+					<xs:element name="motor" type="motorTipus" minOccurs="0" maxOccurs="100"/>
+				</xs:sequence>
+			</xs:complexType>
+		
+			
+			<xs:complexType name="eladoTipus">
+				<xs:sequence>
+					<xs:element name="Etulaj" type="xs:string"/>
+					<xs:element name="Eadsz" type="xs:unsignedLong"/>
+					<xs:element name="Ecim" type="xs:string"/>
+                    <xs:element name="Eneve" type="xs:string"/>
+				</xs:sequence>
+				<xs:attribute name="EID" type="xs:string" use="required"/> 
+			</xs:complexType>
+			
+			<xs:complexType name="kiszallitasTipus">
+				<xs:attribute name="EID" type="xs:string" use="required"/> 
+				<xs:attribute name="GYID" type="xs:string" use="required"/>
+			</xs:complexType>
+			
+			<xs:complexType name="gyartoTipus">
+				<xs:sequence>
+					<xs:element name="gyneve" type="xs:string"/>
+					<xs:element name="gytulaj" type="xs:string"/>
+                    <xs:element name="gycim" type="xs:string"/>
+					<xs:element name="gyadsz" type="xs:unsignedLong"/>
+				</xs:sequence>
+                <xs:attribute name="GYID" type="xs:string" use="required"/>
+			</xs:complexType>
+			
+			<xs:complexType name="gyarTipusd">
+				<xs:attribute name="GYID" type="xs:string" use="required"/> 
+				<xs:attribute name="DID" type="xs:string" use="required"/>
+			</xs:complexType>
+
+            <xs:complexType name="gyarTipusk">
+				<xs:attribute name="GYID" type="xs:string" use="required"/> 
+				<xs:attribute name="KID" type="xs:string" use="required"/>
+			</xs:complexType>
+			
+			<xs:complexType name="dolgozoTipus">
+				<xs:sequence>
+					<xs:element name="dneve" type="xs:string"/>
+					<xs:element name="dtel" type="xs:string"/>
+					<xs:element name="dcime" type="xs:string"/>
+					<xs:element name="dszul" type="xs:string"/>
+				</xs:sequence>
+				<xs:attribute name="DID" type="xs:string" use="required"/> 
+			
+			<xs:complexType name="kocsiTipus">
+				<xs:sequence>
+					<xs:element name="kneve" type="xs:string"/>
+					<xs:element name="ktip" type="xs:string"/>
+					<xs:element name="khajt" type="xs:string"/>		
+				</xs:sequence>
+				<xs:attribute name="KID" type="xs:string" use="required"/> 
+			</xs:complexType>
+
+            <xs:complexType name="alkatreszTipus">
+				<xs:attribute name="KID" type="xs:string" use="required"/> 
+				<xs:attribute name="MID" type="xs:string" use="required"/>
+			</xs:complexType>
+			
+			<xs:complexType name="motorTipus">
+				<xs:sequence>
+					<xs:element name="urtart" type="xs:unsignedLong"/>
+					<xs:element name="mtip" type="xs:string"/>
+                    <xs:element name="telj" type="xs:unsignedLong"/>
+				</xs:sequence>
+                <xs:attribute name="MID" type="xs:string" use="required"/>
+			</xs:complexType>
+			
+</xs:schema>

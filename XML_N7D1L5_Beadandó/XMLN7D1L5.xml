@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<kocsik xmlns:xsi="https://w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="XMLN7D1L5.xsd">
+    <elado EID="01">
+        <Etulaj>Kis Erno</Etulaj>
+        <Eadsz>16516651</Eadsz>
+        <Ecim>Miskolc, Kis Erno utca 2</Ecim>
+        <Eneve>Muscle Car</Eneve>
+    </elado>
+    <elado EID="02">
+        <Etulaj>Kovacs Janos</Etulaj>
+        <Eadsz>16546516</Eadsz>
+        <Ecim>Miskolc, Ujgyori Piac 10</Ecim>
+        <Eneve>Citroen</Eneve>
+    </elado>
+    <elado EID="03">
+        <Etulaj>Kis Tibor</Etulaj>
+        <Eadsz>455464565</Eadsz>
+        <Ecim>Miskolc, Kis Tabornok utca 7a</Ecim>
+        <Eneve>Lada</Eneve>
+    </elado>
+
+    <kiszallitas GYID="01" EID="01"/>
+    <kiszallitas GYID="02" EID="03"/>
+    <kiszallitas GYID="03" EID="02"/>
+
+    <gyarto GYID="01">
+        <gyneve>Dodge</gyneve>
+        <gytulaj>Kis Pista</gytulaj>
+        <gycim>Budapest, Nagy korut 3</gycim>
+        <gyadsz>6541651566</gyadsz>
+    </gyarto>
+    <gyarto GYID="02">
+        <gyneve>Peugeot</gyneve>
+        <gytulaj>Kis Bence</gytulaj>
+        <gycim>Kapuvar, Nagy korut 3</gycim>
+        <gyadsz>6544651651566</gyadsz>
+    </gyarto>
+    <gyarto GYID="03">
+        <gyneve>Ford</gyneve>
+        <gytulaj>Kis Ferenc</gytulaj>
+        <gycim>Debrecen, Nagy Pista utca 3</gycim>
+        <gyadsz>6541651784566</gyadsz>
+    </gyarto>
+
+    <gyar GYID="01" DID="01"/>
+    <gyar GYID="03" DID="03"/>
+    <gyar GYID="02" DID="02"/>
+
+    <dolgozo DID="01">
+        <dneve>Jozsef Atilla</dneve>
+        <dcime>Budapest, Kassai utca 37</dcime>
+        <dszul>1987.12.01</dszul>
+        <dtel>36204546516</dtel>
+    </dolgozo>
+    <dolgozo DID="02">
+        <dneve>Fekete Peter</dneve>
+        <dcime>Kapuvar, Szerencsi utca 27</dcime>
+        <dszul>1987.12.01</dszul>
+        <dtel>36204546516</dtel>
+    </dolgozo>
+    <dolgozo DID="03">
+        <dneve>Petofi Sandor</dneve>
+        <dcime>Debrecen, Kassai utca 37</dcime>
+        <dszul>1987.12.01</dszul>
+        <dtel>36204546516</dtel>
+    </dolgozo>
+
+    <gyar GYID="01" KID="01"/>
+    <gyar GYID="02" KID="02"/>
+    <gyar GYID="03" KID="03"/>
+
+
+    <auto KID="01">
+        <kneve>Dodge Challanger Demon</kneve>
+        <ktip>Sedan</ktip>
+        <khajt>Hatso</khajt>
+    </auto>
+    <auto KID="02">
+        <kneve>Peugeot 403</kneve>
+        <ktip>Sedan</ktip>
+        <khajt>Elso</khajt>
+    </auto>
+    <auto KID="03">
+        <kneve>Ford Raptor</kneve>
+        <ktip>Terep</ktip>
+        <khajt>Ossz</khajt>
+    </auto>
+
+    <alkatresz KID="01" MID="01"/>
+    <alkatresz KID="02" MID="02"/>
+    <alkatresz KID="03" MID="03"/>
+
+    <motor MID="01">
+        <urtart>6400</urtart>
+        <mtip>Benzin</mtip>
+        <telj>1000</telj>
+    </motor>
+    <motor MID="02">
+        <urtart>1400</urtart>
+        <mtip>Dizel</mtip>
+        <telj>150</telj>
+    </motor>
+    <motor MID="03">
+        <urtart>3200</urtart>
+        <mtip>Benzin</mtip>
+        <telj>380</telj>
+    </motor>
+</kocsik>
