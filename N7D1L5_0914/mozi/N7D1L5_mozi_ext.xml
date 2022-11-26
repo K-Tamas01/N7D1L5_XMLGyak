@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mozi>
+    <film id="txn_nxm_2jb" mufaj="horror">
+        <rendezo id="nzk_4xm_2jb" nev="alex">
+            <nev>Alex</nev>
+            <kor>42</kor>
+        </rendezo>
+        <szinesz id="u5q_4xm_2jb" nev="Madison_Ivy" />
+        <iro id="trv_4xm_2jb">
+            <fajta>Dráma</fajta>
+            <kor>47</kor>
+        </iro>
+    </film>
+</mozi>
