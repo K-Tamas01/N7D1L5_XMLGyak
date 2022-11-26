@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE N7D1L5_ertodtd SYSTEM "N7D1L5.ertodtd.dtd">
+
+<convert>
+
+    <A Aa="id1">
+        <Ab>
+            <Abx></Abx>
+            <Aby></Aby>
+        </Ab>
+        <Ac>
+            <Acd></Acd>
+            <Ace></Ace>
+        </Ac>
+    </A>
+
+    <B Ba="id2" B_C="id4">
+        <Bb>
+            <Bbx></Bbx>
+            <Bby></Bby>
+        </Bb>
+    </B>
+
+    <C Ca="id4">
+        <Cb></Cb>
+    </C>
+
+    <A_B A_B_A="id1" A_B_B="id2">
+        <A_B_c></A_B_c>
+    </A_B>
+    
+</convert>

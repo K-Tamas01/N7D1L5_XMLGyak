@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<kurzusfelvetel>
+    <hallgato id = "N7D1L5_ME">
+		<hnev>Korom Tamás</hnev>
+		<szulev>2000-08-25</szulev>
+		<szak evf= "5">ProgramTervező Informatikus</szak>
+	</hallgato>
+	
+	<kurzusok>
+		<kurzus id = "GEIAL332-B">
+			<kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+			<kredit>5</kredit>
+			<hely>XXXII.</hely>
+			<idopont>Kedd 12:00-13:30</idopont>
+			<oktato>Dr. Bednarik László</oktato>
+		</kurzus>
+		<kurzus id= "GEIAL322-B" jovahagyas ="igen">
+			<kurzusnev>Valószínűségszámítás.</kurzusnev>
+			<kredit>5</kredit>
+			<hely>II előadó</hely>
+			<idopont>Hétfő 8:00-9:30</idopont>
+			<oktato>Dr. Fegyverneki Sándor</oktato>
+		</kurzus>
+	</kurzusok>
+</kurzusfelvetel>

@@ -1,0 +1,66 @@
+<?xml-stylesheet type = "text/xsl" href="N7D1L5_orarend.xsl"?>
+
+
+<orarend>
+    <ora id="01e" tipus="elmélet">
+        <targy>Web technológiák</targy>
+        <idopont nap="Hétfő" tol="08:00" ig="10:00"></idopont>
+        <helyszin>XXX</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+    <ora id="01g" tipus="gyakorlat">
+        <targy>Web technológiák</targy>
+        <idopont nap="Hétfő" tol="16:00" ig="18:00"></idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="02e" tipus="elmélet">
+        <targy>Mesterséges intelligencia</targy>
+        <idopont nap="Kedd" tol="09:00" ig="12:00"></idopont>
+        <helyszin>II</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+    <ora id="02g" tipus="gyakorlat">
+        <targy>Mesterséges intelligencia</targy>
+        <idopont nap="Szerda" tol="09:00" ig="10:00"></idopont>
+        <helyszin>In/15</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="03e" tipus="elmélet">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont nap="Kedd" tol="12:00" ig="14:00"></idopont>
+        <helyszin>XXXII</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+    <ora id="03g" tipus="gyakorlat">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont nap="Szerda" tol="10:00" ig="12:00"></idopont>
+        <helyszin>In/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="04e" tipus="elmélet">
+        <targy>Valószínűségszámítás</targy>
+        <idopont nap="Hétfő" tol="08:00" ig="09:30"></idopont>
+        <helyszin>II előadó</helyszin>
+        <oktato>Dr. Fegyverneki Sándor</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="05e" tipus="elmélet">
+        <targy>Vállalati információs rendszerek fejlesztése</targy>
+        <idopont nap="Szerda" tol="16:00" ig="20:00"></idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Dr. Sásvári Péter</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+</orarend>

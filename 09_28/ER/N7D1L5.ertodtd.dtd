@@ -1,0 +1,18 @@
+<!DOCTYPE XYmodell
+[
+<!ELEMENT XYmodell (A,B,C)>
+<!ELEMENT Aa (#PCDATA)>
+<!ELEMENT Ab (x,y)>
+<!ELEMENT Abx (#PCDATA)>
+<!ELEMENT Aby (#PCDATA)>
+<!ELEMENT Ac (d,e)>
+<!ELEMENT Acd (#PCDATA)>
+<!ELEMENT Ace (#PCDATA)>
+<!ELEMENT Ba (#PCDATA)>
+<!ELEMENT B (x,y)>
+<!ELEMENT Bbx (#PCDATA)>
+<!ELEMENT Bby (#PCDATA)>
+<!ELEMENT C (a,b)>
+<!ELEMENT Ca (#PCDATA)>
+<!ELEMENT Cb (#PCDATA)>
+]>
