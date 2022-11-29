@@ -61,13 +61,15 @@ public class READ_N7D1L5 {
 		                Node node2_1 = elem.getElementsByTagName("Eadsz").item(0);
 		                Node node2_2 = elem.getElementsByTagName("Ecim").item(0);
 		                Node node2_3 = elem.getElementsByTagName("Eneve").item(0);
-		                String varos = node2_1.getTextContent();
+		                String ado = node2_1.getTextContent();
+						String cim = node2_2.getTextContent();
 		                String Eneve = node2_3.getTextContent();
 
 		                // Az eltárolt értékek kiíratása
 		                System.out.println("Elado ID-ja: " + id);
-		                System.out.println("Adoszama: " + nev);
-		                System.out.println("Cime: " + varos);
+						System.out.println("Tulaj: " + nev);
+		                System.out.println("Adoszama: " + ado);
+		                System.out.println("Cime: " + cim);
 		                System.out.println("Eneve: "+ Eneve);
 
 		            }
