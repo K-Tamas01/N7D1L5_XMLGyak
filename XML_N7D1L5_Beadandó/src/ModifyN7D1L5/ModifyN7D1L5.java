@@ -109,7 +109,7 @@ public class ModifyN7D1L5 {
 
 	            }
 	        }
-			System.out.println("\n3. módosítás: [Név: Haragos Hugó -> Név: Haragos Hedvig]");
+			System.out.println("\n3. módosítás: [Dolgozo neve: Fekete Peter -> Dolgozo neve: Fekete Istvan]");
 			
 			for (int i = 0; i < nList2.getLength(); i++) {
 	            Node nNode = nList2.item(i);
@@ -128,7 +128,7 @@ public class ModifyN7D1L5 {
 	            }
 	        }
 			
-			System.out.println("\n4. módosítás: [Alap fizetés beállítása a könyvtárosoknak]");
+			System.out.println("\n4. módosítás: [Alap fizetés beállítása a dolgozóknak]");
 			
 			for (int i = 0; i < nList3.getLength(); i++) {
 	            Node nNode = nList3.item(i);

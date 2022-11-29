@@ -34,21 +34,22 @@ public class QueryN7D1L5 {
 		
 		System.out.println("--------------");
 		System.out.println("1. lekérdezés:");
-		System.out.println("A kölcsözõk adatai:\n");
+		System.out.println("A dolgozók adatai:\n");
 		
 		//Végigiterálás a listán
-		NodeList kolcsonzoList = doc.getElementsByTagName("Kolcsonzo");
+		NodeList kolcsonzoList = doc.getElementsByTagName("dolgozo");
 		for(int i=0; i<kolcsonzoList.getLength(); i++) {
 			Node k = kolcsonzoList.item(i);
 			if(k.getNodeType()==Node.ELEMENT_NODE) {
 				Element kolcsonzo = (Element) k;
-				String ID = kolcsonzo.getAttribute("ID");
+				String DID = kolcsonzo.getAttribute("DID");
 				NodeList nevList = kolcsonzo.getChildNodes();
+				System.out.println("Dolgozó"+ DID +":");
 				for(int j=0; j<nevList.getLength(); j++) {
 					Node n = nevList.item(j);
 					if (n.getNodeType()==Node.ELEMENT_NODE) {
 						Element nev = (Element) n;
-						System.out.println("Kölcsönzõ " + ID + ": " + nev.getTagName() + "= " + nev.getTextContent());
+						System.out.println(nev.getTagName() + "= " + nev.getTextContent());
 						
 					}
 			}
@@ -56,40 +57,33 @@ public class QueryN7D1L5 {
 	}
 		System.out.println("--------------");
 		System.out.println("2. lekérdezés:");
-		System.out.println("Azon könyvek adatai, amelyeknek ára 5200:\n");
+		System.out.println("Azon motorok, amelyeknek teljesítménye meghaladja a 200LE-t:\n");
 		
-		NodeList arList = doc.getElementsByTagName("Konyv");
+		NodeList motorList = doc.getElementsByTagName("motor");
 		
-		for(int i = 0; i < arList.getLength(); i++) {
+		for(int i = 0; i < motorList.getLength(); i++) {
 				
-			Node a = arList.item(i);
+			Node a = motorList.item(i);
 				
 			if(a.getNodeType() == Node.ELEMENT_NODE) {
 				Element elem = (Element) a;
 				
-				Node node5 = elem.getElementsByTagName("Ar").item(0);
-				String ar = node5.getTextContent();
+				Node node5 = elem.getElementsByTagName("telj").item(0);
+				int telj = Integer.parseInt(node5.getTextContent());
 				
-				if("5200".equals(ar)) {
-					String ID = elem.getAttribute("ID");
+				if(200 <= telj) {
+					String MID = elem.getAttribute("MID");
 
-					Node node1 = elem.getElementsByTagName("Cim").item(0);
-					String cim = node1.getTextContent();
+					Node node1 = elem.getElementsByTagName("mtip").item(0);
+					String mtip = node1.getTextContent();
+
+					Node node2 = elem.getElementsByTagName("urtart").item(0);
+					String urtart = node2.getTextContent();
 					
-					Node node2 = elem.getElementsByTagName("Ar").item(0);
-					String ar2 = node2.getTextContent();
 					
-					Node node3 = elem.getElementsByTagName("Szerzo").item(0);
-					String szerzo = node3.getTextContent();
-					
-					Node node4 = elem.getElementsByTagName("Oldalszam").item(0);
-					String oldalszam = node4.getTextContent();
-					
-					System.out.println("Könyv ID: " + ID);
-					System.out.println("Cím: " + cim);
-					System.out.println("Ár: " + ar2);
-					System.out.println("Szerzõ: " + szerzo);
-					System.out.println("Oldalszám: " + oldalszam + "\n");
+					System.out.println("Motor ID: " + MID);
+					System.out.println("Motor típusa: " + mtip);
+					System.out.println("Motor űrtartalma: " + urtart + "\n");
 				}
 			}
 		}
