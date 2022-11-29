@@ -62,7 +62,6 @@ public class READ_N7D1L5 {
 		                Node node2_2 = elem.getElementsByTagName("Ecim").item(0);
 		                Node node2_3 = elem.getElementsByTagName("Eneve").item(0);
 		                String varos = node2_1.getTextContent();
-		                String utca = node2_2.getTextContent();
 		                String Eneve = node2_3.getTextContent();
 
 		                // Az eltárolt értékek kiíratása
@@ -247,7 +246,4 @@ public class READ_N7D1L5 {
 		}
 
 	}
-
-
-
 }
