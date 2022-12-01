@@ -51,19 +51,31 @@
 
     <dolgozo DID="01">
         <dneve>Jozsef Atilla</dneve>
-        <dcime>Budapest, Kassai utca 37</dcime>
+        <dcime>
+            <irsz>1007</irsz>
+            <varos>Budapest</varos>
+            <utca>Kassai utca 2</utca>
+        </dcime>
         <dszul>1987.12.01</dszul>
         <dtel>36204546516</dtel>
     </dolgozo>
     <dolgozo DID="02">
         <dneve>Fekete Peter</dneve>
-        <dcime>Kapuvar, Szerencsi utca 27</dcime>
+        <dcime>
+            <irsz>7400</irsz>
+            <varos>Kaposvár</varos>
+            <utca>Szerencsi utca 2</utca>
+        </dcime>
         <dszul>1987.12.01</dszul>
         <dtel>36204546516</dtel>
     </dolgozo>
     <dolgozo DID="03">
         <dneve>Petofi Sandor</dneve>
-        <dcime>Debrecen, Kassai utca 37</dcime>
+        <dcime>
+            <irsz>3527</irsz>
+            <varos>Miskolc</varos>
+            <utca>Soltész Nagy Kálmán utca 7</utca>
+        </dcime>
         <dszul>1987.12.01</dszul>
         <dtel>36204546516</dtel>
     </dolgozo>
