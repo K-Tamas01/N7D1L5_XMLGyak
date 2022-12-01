@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>JScriptN7D1L5</title>
+        <meta charset="UTF-8" />
+        <style>
+            h2   {font-weight: bold;}
+            p    {font-weight: bold;}
+            </style>
+    </head>
+    <body>
+        <h2>Json megvalósítása - Javascript</h2>
+        <div id="data"></div>
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'XMLN7D1L5.xml', true);
+            xhr.timeout = 2000;
+
+            xhr.onload = function () {
+            var xmlDoc = this.responseXML;
+            var author = xmlDoc.getElementsByTagName("author")
+            var language = xmlDoc.getElementsByTagName("language")
+            for(let i = 0; i < author.length; i++){
+                document.getElementById("data").innerHTML += "<p>Language: " + language[i].innerHTML + "<br /><br />Author: " + author[i].innerHTML + "<br /></p>";
+            }
+            };
+
+            xhr.send(null)
+        </script>
+    </body>
+</html>
