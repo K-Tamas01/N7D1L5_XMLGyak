@@ -4,22 +4,22 @@
 <kocsik xmlns:xsi="https://w3.org/2001/XMLSchema-instance" 
 	xsi:noNamespaceSchemaLocation="XMLN7D1L5.xsd">
     <elado EID="01">
-        <Etulaj>Kis Erno</Etulaj>
-        <Eadsz>16516651</Eadsz>
-        <Ecim>Miskolc, Kis Erno utca 2</Ecim>
-        <Eneve>Muscle Car</Eneve>
+        <etulaj>Kis Erno</etulaj>
+        <eadsz>16516651</eadsz>
+        <ecim>Miskolc, Kis Erno utca 2</ecim>
+        <eneve>Muscle Car</eneve>
     </elado>
     <elado EID="02">
-        <Etulaj>Kovacs Janos</Etulaj>
-        <Eadsz>16546516</Eadsz>
-        <Ecim>Miskolc, Ujgyori Piac 10</Ecim>
-        <Eneve>Citroen</Eneve>
+        <etulaj>Kovacs Janos</etulaj>
+        <eadsz>16546516</eadsz>
+        <ecim>Miskolc, Ujgyori Piac 10</ecim>
+        <eneve>Citroen</eneve>
     </elado>
     <elado EID="03">
-        <Etulaj>Kis Tibor</Etulaj>
-        <Eadsz>455464565</Eadsz>
-        <Ecim>Miskolc, Kis Tabornok utca 7a</Ecim>
-        <Eneve>Lada</Eneve>
+        <etulaj>Kis Tibor</etulaj>
+        <eadsz>455464565</eadsz>
+        <ecim>Miskolc, Kis Tabornok utca 7a</ecim>
+        <eneve>Lada</eneve>
     </elado>
 
     <kiszallitas GYID="01" EID="01"/>
@@ -58,6 +58,8 @@
         </dcime>
         <dszul>1987.12.01</dszul>
         <dtel>36204546516</dtel>
+	<dtel>3620524516</dtel>
+	<dtel>3620728516</dtel>
     </dolgozo>
     <dolgozo DID="02">
         <dneve>Fekete Peter</dneve>
@@ -67,7 +69,8 @@
             <utca>Szerencsi utca 2</utca>
         </dcime>
         <dszul>1987.12.01</dszul>
-        <dtel>36204546516</dtel>
+        <dtel>36208976516</dtel>
+	<dtel>36207796516</dtel>
     </dolgozo>
     <dolgozo DID="03">
         <dneve>Petofi Sandor</dneve>

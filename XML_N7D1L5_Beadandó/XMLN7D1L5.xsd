@@ -112,10 +112,19 @@
 				<xs:sequence>
 					<xs:element name="dneve" type="xs:string"/>
 					<xs:element name="dtel" type="xs:string"/>
-					<xs:element name="dcime" type="xs:string"/>
+					<xs:element name="dcime" type="xs:lakhely"/>
 					<xs:element name="dszul" type="xs:string"/>
 				</xs:sequence>
 				<xs:attribute name="DID" type="xs:string" use="required"/> 
+			</xs:complexType>
+
+			<xs:complexType name="lakhelyTipus">
+				<xs:sequence>
+					<xs:element name="varos" type="xs:string"/>
+					<xs:element name="utca" type="xs:string"/>
+					<xs:element name="irsz" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
 			
 			<xs:complexType name="kocsiTipus">
 				<xs:sequence>
