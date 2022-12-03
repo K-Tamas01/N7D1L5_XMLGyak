@@ -2,6 +2,7 @@ package ReadN7D1L5;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -159,17 +160,26 @@ public class READ_N7D1L5 {
 		                Node node1 = elem.getElementsByTagName("dneve").item(0);
 		                String nev = node1.getTextContent();
 		                
-		                Node node2 = elem.getElementsByTagName("dcime").item(0);
-		                String cim = node2.getTextContent();
+		                Node node2_1 = elem.getElementsByTagName("irsz").item(0);
+		                String irsz = node2_1.getTextContent();
+		                Node node2_2 = elem.getElementsByTagName("varos").item(0);
+		                String varos = node2_2.getTextContent();
+		                Node node2_3 = elem.getElementsByTagName("utca").item(0);
+		                String utca = node2_3.getTextContent();
 		                Node node3 = elem.getElementsByTagName("dszul").item(0);
-		                String dszul = node3.getTextContent();		             
-		                Node node4 = elem.getElementsByTagName("dtel").item(0);
-		                String tel = node4.getTextContent();
+		                String dszul = node3.getTextContent();
+		                ArrayList<String> tel = new ArrayList<String>();
+		                for(int j = 0; j < elem.getElementsByTagName("dtel").getLength(); j++) {
+		                	Node node4 = elem.getElementsByTagName("dtel").item(j);
+		                	tel.add(node4.getTextContent());
+		                }
 		                
 		                System.out.println("Dolgozo ID-ja: " + id);
 		                System.out.println("Név: " + nev);
 		                System.out.println("Tel: "+tel);
-		                System.out.println("Címe: "+cim);
+		                System.out.println("Irsz: "+irsz);
+		                System.out.println("varos: "+varos);
+		                System.out.println("Utca: "+utca);
 		                System.out.println("Született: "+dszul);
 
 		            }
@@ -248,4 +258,7 @@ public class READ_N7D1L5 {
 		}
 
 	}
+
+
+
 }

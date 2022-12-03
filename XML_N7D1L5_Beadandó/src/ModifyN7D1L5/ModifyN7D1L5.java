@@ -30,9 +30,6 @@ public class ModifyN7D1L5 {
 
 			doc.getDocumentElement().normalize();
 			
-			
-			//Végig iterálunk a konyv elemeken, a 240-es oldalszámúakat 300-assá módosítjuk,
-			
 			//A getElementByTagName() metódus segítségével megkapjuk a könyv elem NodeListjét a dokumentumban.
 			NodeList nList = doc.getElementsByTagName("motor");
 			
@@ -85,11 +82,52 @@ public class ModifyN7D1L5 {
 				dolgozo.appendChild(salaryElement);
 			}
 			
+			//Lada Viszont eladó neve kicserélése Audira
+			NodeList nList4 = doc.getElementsByTagName("elado");
 			
+			for(int i = 0; i < nList4.getLength(); i++) {
+				Node dolgozo4 = doc.getElementsByTagName("elado").item(i);
+		        
+		        NodeList list4 = dolgozo4.getChildNodes();
+		        
+		        for (int temp = 0; temp < list4.getLength(); temp++) {
+		           Node node = list4.item(temp);
+		           if (node.getNodeType() == Node.ELEMENT_NODE) {
+		              Element eElement = (Element) node;
+		              if("eneve".equals(eElement.getNodeName())) {
+		            	  if("Lada".equals(eElement.getTextContent())) {
+		            		  eElement.setTextContent("Audi");
+		            	  }
+		              }
+		           }
+		        }
+			}
+			
+			NodeList nList5 = doc.getElementsByTagName("dolgozo");
+			
+			for(int i = 0; i < nList5.getLength(); i++) {
+				Node dolgozo5 = doc.getElementsByTagName("dolgozo").item(i);
+		        
+		        NodeList list5 = dolgozo5.getChildNodes();
+		        
+		        for (int temp = 0; temp < list5.getLength(); temp++) {
+		           Node node = list5.item(temp);
+		           if (node.getNodeType() == Node.ELEMENT_NODE) {
+		              Element eElement = (Element) node;
+		              if ("dcime".equals(eElement.getNodeName())) {
+		            	  Node address = eElement.getElementsByTagName("irsz").item(0);
+		            	  if("irsz".equals(address.getNodeName())) {
+		            		 if("7400".equals(address.getTextContent())) {
+		                	 	address.setTextContent("7402");
+		                 	}
+		            	  }
+		              }
+		           }
+		        }
+			}
 			
 			System.out.println("Az adott kategóriákban módosított adatok:");
-			System.out.println("\n1. módosítás: [MotorUrtartalom: 1400 -> Oldalszám: 1200]");
-			System.out.println("2. módosítás: [Dolgozo neve: Fekete Peter -> Dolgozo neve: Fekete Istvan]");
+			System.out.println("\n1. módosítás: [MotorUrtartalom: 1400 -> MotorUrtart: 1200]");
 			
 			for (int i2 = 0; i2 < nList.getLength(); i2++) {
 	            Node nNode = nList.item(i2);
@@ -109,7 +147,7 @@ public class ModifyN7D1L5 {
 
 	            }
 	        }
-			System.out.println("\n3. módosítás: [Dolgozo neve: Fekete Peter -> Dolgozo neve: Fekete Istvan]");
+			System.out.println("\n2. módosítás: [Dolgozo neve: Fekete Peter -> Dolgozo neve: Fekete Istvan]");
 			
 			for (int i = 0; i < nList2.getLength(); i++) {
 	            Node nNode = nList2.item(i);
@@ -122,13 +160,15 @@ public class ModifyN7D1L5 {
 	                System.out.println("Dolgozo ID-ja: " + eElement.getAttribute("DID"));
 
 	                System.out.println("Név: " + eElement.getElementsByTagName("dneve").item(0).getTextContent());
-	                System.out.println("Címe: " + eElement.getElementsByTagName("dcime").item(0).getTextContent());
+	                System.out.println("Irsz: " + eElement.getElementsByTagName("irsz").item(0).getTextContent());
+	                System.out.println("Város: " + eElement.getElementsByTagName("varos").item(0).getTextContent());
+	                System.out.println("Utca: " + eElement.getElementsByTagName("utca").item(0).getTextContent());
 	                System.out.println("Neve: " + eElement.getElementsByTagName("dszul").item(0).getTextContent());
 	                System.out.println("Telefonszama: " + eElement.getElementsByTagName("dtel").item(0).getTextContent());
 	            }
 	        }
 			
-			System.out.println("\n4. módosítás: [Alap fizetés beállítása a dolgozóknak]");
+			System.out.println("\n3. módosítás: [Alap fizetés beállítása a dolgozóknak]");
 			
 			for (int i = 0; i < nList3.getLength(); i++) {
 	            Node nNode = nList3.item(i);
@@ -143,6 +183,41 @@ public class ModifyN7D1L5 {
 	                System.out.println("Neve: " + eElement3.getElementsByTagName("dszul").item(0).getTextContent());
 	                System.out.println("Telefonszama: " + eElement3.getElementsByTagName("dtel").item(0).getTextContent());
 	                System.out.println("Fizetes: " + eElement3.getElementsByTagName("Fizetes").item(0).getTextContent());
+	            }
+	        }
+			
+			System.out.println("\n4. módosítás: [Lada Viszont eladó neve kicserélése Audira]");
+			
+			for (int i = 0; i < nList4.getLength(); i++) {
+	            Node nNode = nList4.item(i);
+
+	            System.out.println("\nAktuális elem: " + nNode.getNodeName());
+
+	            if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+	                Element eElement4 = (Element) nNode;
+
+	                System.out.println("Eladó Tulaj: " + eElement4.getElementsByTagName("etulaj").item(0).getTextContent());
+	                System.out.println("Adószáma: " + eElement4.getElementsByTagName("eadsz").item(0).getTextContent());
+	                System.out.println("Eladó címe: " + eElement4.getElementsByTagName("ecim").item(0).getTextContent());
+	                System.out.println("Eladó Neve: " + eElement4.getElementsByTagName("eneve").item(0).getTextContent());
+	            }
+	        }
+			
+			System.out.println("\n5. módosítás: [Irsz 7400-ról 7402-re változtatása]");
+			
+			for (int i = 0; i < nList5.getLength(); i++) {
+	            Node nNode = nList5.item(i);
+
+	            System.out.println("\nAktuális elem: " + nNode.getNodeName());
+
+	            if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+	                Element eElement5 = (Element) nNode;
+
+	                System.out.println("Név: " + eElement5.getElementsByTagName("dneve").item(0).getTextContent());
+	                System.out.println("Címe: " + eElement5.getElementsByTagName("dcime").item(0).getTextContent());
+	                System.out.println("Neve: " + eElement5.getElementsByTagName("dszul").item(0).getTextContent());
+	                System.out.println("Telefonszama: " + eElement5.getElementsByTagName("dtel").item(0).getTextContent());
+	                System.out.println("Fizetes: " + eElement5.getElementsByTagName("Fizetes").item(0).getTextContent());
 	            }
 	        }
 	        
