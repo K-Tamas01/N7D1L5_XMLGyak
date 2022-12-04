@@ -3,53 +3,53 @@
 
 <kocsik xmlns:xsi="https://w3.org/2001/XMLSchema-instance" 
 	xsi:noNamespaceSchemaLocation="XMLN7D1L5.xsd">
-    <elado EID="01">
+    <elado EID="1">
         <etulaj>Kis Erno</etulaj>
         <eadsz>16516651</eadsz>
         <ecim>Miskolc, Kis Erno utca 2</ecim>
         <eneve>Muscle Car</eneve>
     </elado>
-    <elado EID="02">
+    <elado EID="2">
         <etulaj>Kovacs Janos</etulaj>
         <eadsz>16546516</eadsz>
         <ecim>Miskolc, Ujgyori Piac 10</ecim>
         <eneve>Citroen</eneve>
     </elado>
-    <elado EID="03">
+    <elado EID="3">
         <etulaj>Kis Tibor</etulaj>
         <eadsz>455464565</eadsz>
         <ecim>Miskolc, Kis Tabornok utca 7a</ecim>
         <eneve>Lada</eneve>
     </elado>
 
-    <kiszallitas GYID="01" EID="01"/>
-    <kiszallitas GYID="02" EID="03"/>
-    <kiszallitas GYID="03" EID="02"/>
+    <kiszallitas GYID="1" EID="1"/>
+    <kiszallitas GYID="2" EID="3"/>
+    <kiszallitas GYID="3" EID="02"/>
 
-    <gyarto GYID="01">
+    <gyarto GYID="1">
         <gyneve>Dodge</gyneve>
         <gytulaj>Kis Pista</gytulaj>
         <gycim>Budapest, Nagy korut 3</gycim>
         <gyadsz>6541651566</gyadsz>
     </gyarto>
-    <gyarto GYID="02">
+    <gyarto GYID="2">
         <gyneve>Peugeot</gyneve>
         <gytulaj>Kis Bence</gytulaj>
         <gycim>Kapuvar, Nagy korut 3</gycim>
         <gyadsz>6544651651566</gyadsz>
     </gyarto>
-    <gyarto GYID="03">
+    <gyarto GYID="3">
         <gyneve>Ford</gyneve>
         <gytulaj>Kis Ferenc</gytulaj>
         <gycim>Debrecen, Nagy Pista utca 3</gycim>
         <gyadsz>6541651784566</gyadsz>
     </gyarto>
 
-    <gyar GYID="01" DID="01"/>
-    <gyar GYID="03" DID="03"/>
-    <gyar GYID="02" DID="02"/>
+    <gyar GYID="1" DID="1"/>
+    <gyar GYID="3" DID="3"/>
+    <gyar GYID="2" DID="2"/>
 
-    <dolgozo DID="01">
+    <dolgozo DID="1">
         <dneve>Jozsef Atilla</dneve>
         <dcime>
             <irsz>1007</irsz>
@@ -61,7 +61,7 @@
 	<dtel>3620524516</dtel>
 	<dtel>3620728516</dtel>
     </dolgozo>
-    <dolgozo DID="02">
+    <dolgozo DID="2">
         <dneve>Fekete Peter</dneve>
         <dcime>
             <irsz>7400</irsz>
@@ -72,7 +72,7 @@
         <dtel>36208976516</dtel>
 	<dtel>36207796516</dtel>
     </dolgozo>
-    <dolgozo DID="03">
+    <dolgozo DID="3">
         <dneve>Petofi Sandor</dneve>
         <dcime>
             <irsz>3527</irsz>
@@ -83,42 +83,42 @@
         <dtel>36204546516</dtel>
     </dolgozo>
 
-    <gyar GYID="01" KID="01"/>
-    <gyar GYID="02" KID="02"/>
-    <gyar GYID="03" KID="03"/>
+    <gyar GYID="1" KID="1"/>
+    <gyar GYID="2" KID="2"/>
+    <gyar GYID="3" KID="3"/>
 
 
-    <auto KID="01">
+    <auto KID="1">
         <kneve>Dodge Challanger Demon</kneve>
         <ktip>Sedan</ktip>
         <khajt>Hatso</khajt>
     </auto>
-    <auto KID="02">
+    <auto KID="2">
         <kneve>Peugeot 403</kneve>
         <ktip>Sedan</ktip>
         <khajt>Elso</khajt>
     </auto>
-    <auto KID="03">
+    <auto KID="3">
         <kneve>Ford Raptor</kneve>
         <ktip>Terep</ktip>
         <khajt>Ossz</khajt>
     </auto>
 
-    <alkatresz KID="01" MID="01"/>
-    <alkatresz KID="02" MID="02"/>
-    <alkatresz KID="03" MID="03"/>
+    <alkatresz KID="1" MID="1"/>
+    <alkatresz KID="2" MID="2"/>
+    <alkatresz KID="3" MID="3"/>
 
-    <motor MID="01">
+    <motor MID="1">
         <urtart>6400</urtart>
         <mtip>Benzin</mtip>
         <telj>1000</telj>
     </motor>
-    <motor MID="02">
+    <motor MID="2">
         <urtart>1400</urtart>
         <mtip>Dizel</mtip>
         <telj>150</telj>
     </motor>
-    <motor MID="03">
+    <motor MID="3">
         <urtart>3200</urtart>
         <mtip>Benzin</mtip>
         <telj>380</telj>
