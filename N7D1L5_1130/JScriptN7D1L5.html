@@ -8,8 +8,12 @@
             </style>
     </head>
     <body>
-        <h2>Json megvalósítása - Javascript</h2>
+        <h2>XML megvalósítása - Javascript</h2>
         <div id="data"></div>
+        <br />
+        <br />
+        <h2>JSON megvalósítása - Javascript</h2>
+        <div id="jsonData"></div>
         <script>
             var xhr = new XMLHttpRequest();
             xhr.open('GET', 'XMLN7D1L5.xml', true);
@@ -24,7 +28,18 @@
             }
             };
 
-            xhr.send(null)
+            xhr.send(null);
+
+            var bookArray = new Array()
+
+            fetch('JSONN7D1L5.json')
+            .then((res) => res.json())
+            .then((res) => {
+                bookArray = res.book
+                bookArray.map((b) => {
+                    document.getElementById('jsonData').innerHTML += "<p>Language: " + b.language + "<br /><br />Author: " + b.author + "<br /></p>"
+                })
+            })
         </script>
     </body>
 </html>
